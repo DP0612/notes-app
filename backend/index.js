@@ -15,8 +15,6 @@ mongoose.connect(process.env.DATABASE_URL).then(() => {
 const app = express();
 app.use(express.json());
 
-console.log("Hello World");
-
 app.use(
   cors({
     origin: "*",
